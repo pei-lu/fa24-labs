@@ -1,8 +1,36 @@
-title: CSE 140L Fall 2024
+title: CSE 140L FA24
 description: Labwork page for CSE 140L Fall 2024
 theme: just-the-docs
 
 url: https://cse140l.github.io
+color_scheme: dark
 
-aux_links:
-  Template Repository: https://github.com/cse140l/fa24-labs
+#aux_links:
+  #Template Repository: https://github.com/cse140l/fa24-labs
+  #aux_links_new_tab: true
+
+mermaid:
+  version: "9.1.3"
+
+last_edit_timestamp: true
+last_edit_time_format: "%b %e %Y at %I:%M %p"
+
+gh_edit_link: false
+
+callouts_level: quiet # or loud
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: pink
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: grey-lt
+  warning:
+    title: Warning
+    color: red
+
