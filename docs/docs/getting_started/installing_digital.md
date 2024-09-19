@@ -1,22 +1,30 @@
 ---
 title: Installing Digital
-parent: Getting Started
+parent: Digital
 layout: default
 nav_order: 1
 ---
 
 # Installing Digital
+{: .no_toc}
 
-## Digital Logic Simulator
+{: .important-title}
+> Windows Users
+> 
+> Windows users are recommended to install Digital on Windows itself, not using WSL.
+> When exporting your schematics to verilog however, it's important to save your verilog to a path shareable with WSL.
 
-For this quarter, all labs are to be done with the [Digital Logic Simulator](https://github.com/hneemann/Digital).
-Digital is a *gate-level simulator*, which is a piece of software that allows us to drag and drop individual gates (i.e AND gates, OR gates, etc.) and connect the gates to create *circuits*. These circuits can then be simulated which will generate outputs based on certain inputs.
+## Contents
+{: .no_toc .text-delta}
 
-### Requirements
+1. TOC
+{:toc}
 
-- &ge; JRE (Java Runtime Environment) 8
+## Requirements
 
-### Steps to Install
+- [&ge; JRE (Java Runtime Environment) 8](https://openjdk.org/install/)
+
+## Steps to Install
 
 1. Download the v0.31 release of [Digital](https://github.com/hneemann/Digital/releases/download/v0.31/Digital.zip)
 2. Unzip the file
@@ -45,13 +53,13 @@ These are the files that should be unzipped from above.
 
 </details>
 
-## Usage
+# Running Digital
 
-### Launch from GUI
+## Launch from GUI
 
 Double click `Digital.jar` to run Digital.
 
-### Launch from terminal
+## Launch from terminal
 
 Navigate to wherever you unzipped Digital and run:
 
@@ -59,11 +67,14 @@ Navigate to wherever you unzipped Digital and run:
 java -jar Digital.jar
 ```
 
-{: .note}
-Windows users might have to run `java.exe` instead of just `java`.
-Windows users could also try executing `Digital.exe` in the same directory, or `Digital_noD3D.exe` if you have graphical issues.
 
-### Documentation
+{: .important-title}
+> Windows Users
+> 
+> Windows users might have to run `java.exe` instead of just `java`.
+> Windows users could also try executing `Digital.exe` in the same directory, or `Digital_noD3D.exe` if you have graphical issues.
+
+# Documentation
 
 In the `./Digital/docu` folder, there is a PDF containing documentation for every component in Digital.
 

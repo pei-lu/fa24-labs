@@ -2,13 +2,19 @@
 title: Installing Podman
 parent: Getting Started
 layout: default
-nav_order: 2
+nav_order: 4
 ---
 
 # Installing Podman
 
 {: .note}
 Podman isn't necessary to complete the labs, but we strongly recommend to install Podman to run the test cases that we provide.
+
+{: .important-title}
+> Windows Users
+> 
+> Windows users are highly recommended to use [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) to ensure full compatibility with the lab.
+> Additionally, please see the [Windows Users](/docs/getting_started/installing_podman#windows-users) section below.
 
 ## Podman
 
@@ -40,12 +46,17 @@ If you are familiar with Docker and containers, you can see what we have added t
 
 </details>
 
-## Usage
+### Windows Users
 
-{: .important-title}
-> Windows Users
-> 
-> Windows users are highly recommended to use [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) to ensure full compatibility with the Makefiles.
+This lab is primarily designed with \*nix OSes in mind, so please run the following to mimic a Linux environment on your system.
+
+1. Install an Ubuntu WSL container if you haven't already (`wsl --install -d ubuntu` in PowerShell)
+2. Run `bash` in PowerShell
+3. Run `sudo apt-get install git make podman`
+
+You should now be setup for this lab.
+
+## Usage
 
 This may change on a per-lab basis, but typically to run the test suite for a circuit, you should run:
 
