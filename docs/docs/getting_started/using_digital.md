@@ -42,3 +42,10 @@ We ask students to export their schematics to Verilog.
 This is so that a student's schematics can interface with our testing platform.
 Aside from lab reports, the next thing we thoroughly check are the Verilog netlists more than the schematics themselves, so it is important to ensure that you are familiar with exporting to Verilog.
 Please get familiar with exporting to verilog by reading section 4.3 in the *Digital* documentation.
+**Please do not upload any exported testbenches to GradeScope**
+
+### Digital Testbenches
+
+Testbenches in *Digital* are analogous to unit tests in any software codebase.
+We do not provide you with any *Digital* testbenches, but we provide you with a testbench that runs similar to how it runs on the autograder.
+We recommend writing your own testbenches to verify your logic, and can learn how to do so in section 1.4 and 14.1 in the documentation.

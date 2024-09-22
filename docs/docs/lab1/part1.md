@@ -29,13 +29,15 @@ In your journey to becoming a master of digital clockmaking, you'll start with t
 This basic function is quite straightforward.
 Initially, you will focus on keeping track of hours, minutes, and seconds, setting aside more complex temporal concepts for later exploration.
 
-The relationship between these three units of time is elegantly encapsulated in the conventional Babylonian system of 24 hours, 60 minutes, and 60 seconds, as shown in Figure 1.
+The relationship between these three units of time is elegantly encapsulated in the conventional Babylonian system of 24 hours, 60 minutes, and 60 seconds, as shown in [Figure 1](/docs/lab1/part1#figure-1).
 To simplify your task, your mentor has provided a `ClockDev` component that already handles these fundamental timekeeping functions, allowing you to focus on more advanced features in the upcoming parts of your project.
+
+
 
 
 ## Goals
 
-1. Learn how to use Digital
+1. Learn how to use *Digital* for this course
 2. Create a clock capable of:
     - Displaying the current time
     - Setting the current time
@@ -47,5 +49,35 @@ To simplify your task, your mentor has provided a `ClockDev` component that alre
 ### Figure 1
 {: .text-delta}
 ```mermaid
+flowchart TD
+    A[Wait 1s]
+    B["seconds = seconds + 1
+    display(seconds)"]
+    C{seconds &ge; 60?}
+    C1["seconds = 0
+    display(seconds)"]
+    D["minutes = minutes + 1
+    display(minutes)"]
+    E{minutes &ge; 60?}
+    E1["minutes = 0
+    display(minutes)"]
+    F["hours = hours + 1
+    display(hours)"]
+    G{hours &ge; 24?}
+    G1["hours = 0
+    display(hours)"]
 
+    A --> B
+    B --> C
+    C -->|No| A
+    C -->|Yes| C1
+    C1 --> D
+    D --> E
+    E -->|No| A
+    E -->|Yes| E1
+    E1 --> F
+    F --> G
+    G -->|No| A
+    G -->|Yes| G1
+    G1 --> A
 ```
