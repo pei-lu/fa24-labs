@@ -42,7 +42,7 @@ We ask students to export their schematics to Verilog.
 This is so that a student's schematics can interface with our testing platform.
 Aside from lab reports, the next thing we thoroughly check are the Verilog netlists more than the schematics themselves, so it is important to ensure that you are familiar with exporting to Verilog.
 Please get familiar with exporting to verilog by reading section 4.3 in the *Digital* documentation.
-**Please do not upload any exported testbenches to GradeScope**
+**Please do not upload any exported testbenches to GradeScope**.
 
 ### Digital Testbenches
 

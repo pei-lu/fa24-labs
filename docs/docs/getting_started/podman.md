@@ -1,14 +1,14 @@
 ---
-title: Installing Podman
+title: Podman
 parent: Getting Started
 layout: default
 nav_order: 4
 ---
 
-# Installing Podman
+# Podman
 
 {: .note}
-Podman isn't necessary to complete the labs, but we strongly recommend to install Podman to run the test cases that we provide.
+Podman isn't necessary to complete the labs, but we strongly recommend to install Podman to run the [repository](/docs/getting_started/lab_repo) we provide.
 
 {: .important-title}
 > Windows Users

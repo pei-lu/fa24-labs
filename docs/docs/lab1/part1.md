@@ -33,8 +33,6 @@ The relationship between these three units of time is elegantly encapsulated in 
 To simplify your task, your mentor has provided a `ClockDev` component that already handles these fundamental timekeeping functions, allowing you to focus on more advanced features in the upcoming parts of your project.
 
 
-
-
 ## Goals
 
 1. Learn how to use *Digital* for this course
