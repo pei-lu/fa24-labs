@@ -31,6 +31,9 @@ Brief
 
 ## Circuit Structure
 
+{: .warning}
+Failure to follow this structure can result in grading of the lab to be delayed or incorrect.
+
 Your main *Digital* circuit should be named as `ConventionalAlarmClock`.
 The following ports should be opened for the `ConventionalAlarmClock`:
 
@@ -47,9 +50,10 @@ The following ports should be opened for the `ConventionalAlarmClock`:
 |     OUTPUT     | `MINUTES`     |    -   |                 6 | The current minutes the alarm clock has stored                          |
 |     OUTPUT     | `HOURS`       |    -   |                 5 | The current hours the alarm clock has stored                            |
 |     OUTPUT     | `BUZZ`        |  High  |                 1 | Signal to buzz an external alarm when the alarm time is reached         |
-|     OUTPUT     | `SEG_SECONDS` |    -   |                 7 | Seven segment signal for the current seconds the alarm clock has stored |
-|     OUTPUT     | `SEG_MINUTES` |    -   |                 7 | Seven segment signal for the current minutes the alarm clock has stored |
-|     OUTPUT     | `SEG_HOURS`   |    -   |                 7 | Seven segment signal for the current hours the alarm clock has stored   |
+|     OUTPUT     | `SEG_SECONDS` |    -   |                14 | Seven segment signal for the current seconds the alarm clock has stored |
+|     OUTPUT     | `SEG_MINUTES` |    -   |                14 | Seven segment signal for the current minutes the alarm clock has stored |
+|     OUTPUT     | `SEG_HOURS`   |    -   |                14 | Seven segment signal for the current hours the alarm clock has stored   |
 
-{: .warning}
-Failure to follow this structure can result in grading of the lab to be delayed or incorrect.
+## Deliverables
+- `ConventionalAlarmClock.dig`
+- `ConventionalAlarmClock.v`
