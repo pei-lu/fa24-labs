@@ -14,6 +14,8 @@ nav_order: 2
 1. TOC
 {:toc}
 
+---
+
 ## Introduction
 
 [*Digital*](https://github.com/hneemann/Digital) is a **gate-level digital logic hardware simulator**.

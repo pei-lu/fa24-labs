@@ -14,6 +14,8 @@ nav_order: 2
 1. TOC
 {:toc}
 
+---
+
 ## Introduction to Digital
 
 *Digital* has a fantastic documentation (see [Documentation](/docs/getting_started/installing_digital#documentation)) that encompasses all the features that the simulator provides.

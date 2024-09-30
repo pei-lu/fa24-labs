@@ -20,6 +20,8 @@ nav_order: 1
 1. TOC
 {:toc}
 
+---
+
 ## Requirements
 
 - [&ge; JRE (Java Runtime Environment) 8](https://openjdk.org/install/)

@@ -26,9 +26,11 @@ October 14th, 2024
 1. TOC
 {:toc}
 
+---
+
 ## Lore
 
-In the bustling workshop of a legendary clocksmith, you, an eager apprentice, have been tasked with bringing the craft of timekeeping into the digital age.
+In the bustling workshop of TickTok Incorporated, you, an eager apprentice, have been tasked with bringing the craft of timekeeping into the digital age.
 No longer confined to the gears and springs of traditional clocks, your master has entrusted you with the mission of creating digital clocks using *Digital*.
 
 ## Goals
@@ -36,7 +38,6 @@ The goal of this lab is to familiarize you with *Digital* by implementing alarm 
 Your task consists of four distinct parts, each building upon the last:
 
 1. **The Conventional Alarm Clock**
-   - Your journey begins by designing a conventional alarm clock using *Digital*, and learning the basics of digital timekeeping.
 
 2. **The French Republican Calendar Alarm Clock**
    - Next, you will tackle a more challenging task: implementing an alternative version of the alarm clock that conforms to the structure of the French Republican Calendar.

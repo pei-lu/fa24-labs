@@ -32,3 +32,9 @@ cd CSE140L
 {: .warning}
 This is still unfinished.
 Please check back after the first lab is released.
+
+The repository structure is as follows:
+
+```
+
+```
