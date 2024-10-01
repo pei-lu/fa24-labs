@@ -66,6 +66,16 @@ While this signal is set high, the external clock input (`CLK`) **should not mod
 During this operation, the advance signals (`MIN_ADV` or `HR_ADV`) can be set high.
 On rising edges of these signals (i.e. the signal goes from 0 to 1), then the corresponding counter storing the value should be incremented by 1.
 
+
+<details markdown="block">
+
+<summary>Hint</summary>
+
+A `CLK` signal to the `BabylonianClock` will increment the `SECONDS` by 1 only on rising edges.
+Perhaps this port could be reused?
+
+</details>
+
 #### Example
 
 Suppose the clock is at `00:00:54` and in setup mode.

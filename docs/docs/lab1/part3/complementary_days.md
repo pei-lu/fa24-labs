@@ -1,12 +1,12 @@
 ---
-title: The French Republican Calendar Alarm Clock
+title: Complementary Days
 parent: Part 3
 grand_parent: Lab 1
 layout: default
-nav_order: 1
+nav_order: 2
 ---
 
-# The French Republican Calendar Alarm Clock
+# Complementary Days in The French Republican Calendar Alarm Clock
 {: .no_toc}
 
 ## Contents
@@ -17,7 +17,19 @@ nav_order: 1
 
 ---
 
-After presenting your latest clock (the *French Republican Alarm Clock*) to your eccentric boss, he had one concern:
+{: .highlight}
+This is an optional bonus part of the lab, and should be attempted after finishing the non-optional part of the French Republican Calendar.
+
+After finishing the base French Republican Calendar Alarm Clock (and more importantly, restocking the Advil), you decide to take a stab at handling complementary days.
+To remind yourself what complementary days are, you check your notes and read that at the **end of every year, there are 5 extra days (6 extra days in leap years)**.
+You find that **years that are `year mod 4 = 3` are leap years**.
+You decide that since you have the space, you can define a 13th "month" that holds these complementary days.
+
+This would mean that your alarm clock would behave similarly to the base clock for the first 12 months.
+But **on the 13th month, the day counter rolls over at 5 (displays 0-4) on a regular year and will roll over at 6 (displays 0-5) on a leap year.**
+Additionally, since there are only 5 or 6 days in this "month", **when the days reset the months need to reset as well (and increment the year).**
+
+After presenting your latest clock (the *French Republican Alarm Clock*) internally to your eccentric boss, he had one concern:
 
 > What about the bear market?
 
@@ -35,7 +47,7 @@ After leaving the meeting room (with a massive headache), you decide to calm you
 
 Upon closer inspection, it seems that these French revolutionaires gave up on their simpler system, and their higher order units of time became a bit more irregular.
 The French Republican Calendar has **10 days in a week, 3 weeks in a month, and 12 months in a year**.
-This however results in a 5-6 days (the *complementary days*) fewer in a year than the convetional calendar we use today.
+This however results in a 5-6 days fewer in a year than the convetional calendar we use today.
 You decide that you don't have enough Advil to worry about this at the current moment.
 After a normal dosage of Advil, you sit down and get to work.
 
@@ -46,6 +58,9 @@ After a normal dosage of Advil, you sit down and get to work.
 
 ## Instructions
 
+{: .highlight}
+**YOU DO NOT IMPLEMENT THE 5-6 FEWER DAY DISCREPANCY IN THIS PART.**
+
 All of your work should be in a new circuit called `FrenchRepublicanCalendarAlarmClock` (it will save as `FrenchRepublicanCalendarAlarmClock.dig`).
 
 You have been given some [more signals](/docs/lab1/part3#circuit-structure) than the previous parts, namely:
@@ -55,21 +70,14 @@ You have been given some [more signals](/docs/lab1/part3#circuit-structure) than
 - `DAYS`
 - `WEEKS`
 - `MONTHS`
-- `YEARS`
 - `ALARM_DAYS`
 - `ALARM_WEEKS`
 - `ALARM_MONTHS`
 - `SEG_DAYS`
 - `SEG_WEEKS`
 - `SEG_MONTHS`
-- `SEG_YEARS`
-
-{: .note}
-Implementing the *complementary day* logic is not necessary for this part and counts as extra credit.
 
 Please check the previous parts to see how the signals were used (the naming convention should give you a hint) and implement the missing logic required.
-Since the French Republican calendar was in effect for no more than 14 years, your prototype is satisfactory to confine itself to handling 16 years using a 4-bit counter.
-You do not need to implement any setting logic for `YEARS`, only the `CLR` and the display logic.
 
 Remember, your final circuit should implement:
 - The correct time functionality (outlined in **bold** in the lore above)

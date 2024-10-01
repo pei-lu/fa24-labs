@@ -1,5 +1,5 @@
 ---
-title: The FRC Alarm Clock
+title: The French Republican Alarm Clock
 parent: Part 2
 grand_parent: Lab 1
 layout: default
