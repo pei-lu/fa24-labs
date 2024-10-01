@@ -43,7 +43,7 @@ The ports of the module are provided below with a description:
 ### Diagram
 
 [//]: <> (Remember to make the background lightgrey by editing the SVG!)
-![](/assets/lab1/clock.svg)
+![](/fa24-labs/assets/lab1/clock.svg)
 
 ### Explanation
 
@@ -96,7 +96,7 @@ The ports of the module are provided below with a description:
 
 ### Diagram
 
-![](/assets/lab1/alarm.svg)
+![](/fa24-labs/assets/lab1/alarm.svg)
 
 ### Explanation
 
