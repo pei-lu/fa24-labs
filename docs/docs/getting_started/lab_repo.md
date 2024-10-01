@@ -7,9 +7,6 @@ nav_order: 5
 
 # CSE 140L Repository
 
-{: .note}
-It isn't necessary to use the repository to complete the labs, but the repositories are structured to provide test cases and helpful tools to draw meaningful connections with your hardware circuits.
-
 ## Repository Structure
 
 The lab repository is structured as a *mono-repository*.
@@ -29,12 +26,26 @@ cd CSE140L
 
 ## Navigating the Repository
 
-{: .warning}
-This is still unfinished.
-Please check back after the first lab is released.
-
 The repository structure is as follows:
 
 ```
+fa24-labs/
+├── labX
+│   ├── Makefile
+│   ├── schematics
+│   ├── simulator
+│   └── verilog
+├── Makefile
+└── README.md
+```
 
+Within each `labX` directory, you are given a `schematics/` directory for you to use as a workspace for that lab.
+All *Digital* files should be created and saved in that directory.
+Additionally, any *Digital* files that we provide (like for [lab 1](/docs/lab1/part1/provided_components.md)) will be saved in the `schematics` directory.
+
+## Updating the Repository
+
+When in the repository, you should be able to run:
+```
+git pull origin master
 ```
