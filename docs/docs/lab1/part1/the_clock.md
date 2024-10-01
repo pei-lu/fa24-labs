@@ -1,6 +1,7 @@
 ---
 title: The Clock
 parent: Part 1
+grand_parent: Lab 1
 layout: default
 nav_order: 1
 ---

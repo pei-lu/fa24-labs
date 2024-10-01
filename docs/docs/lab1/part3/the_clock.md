@@ -1,6 +1,6 @@
 ---
 title: The FRC Alarm Clock
-parent: Part 2
+parent: Part 3
 grand_parent: Lab 1
 layout: default
 nav_order: 1
