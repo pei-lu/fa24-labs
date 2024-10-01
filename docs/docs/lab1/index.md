@@ -40,7 +40,6 @@ Your task consists of four distinct parts, each building upon the last:
 1. **The Conventional Alarm Clock**
 
 2. **The French Republican Calendar Alarm Clock**
-   - Next, you will tackle a more challenging task: implementing an alternative version of the alarm clock that conforms to the structure of the French Republican Calendar.
 
 3. **The Extended French Republican Calendar Clock**
    - In this part, you will extend the alarm clock to keep track of the day of the week, week of the month, and month of the year in the French Republican Calendar.

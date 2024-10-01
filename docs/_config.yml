@@ -11,6 +11,8 @@ plugins:
 last-modified-at:
   date-format: "%B %e %Y at %I:%M %p (%Z)"
 
+favicon_ico: "/assets/favicon.ico"
+
 #aux_links:
   #Template Repository: https://github.com/cse140l/fa24-labs
   #aux_links_new_tab: true
