@@ -52,9 +52,9 @@ The following ports should be opened for the `ConventionalAlarmClock`:
 |     OUTPUT     | `ALARM_MINUTES` |    -   |                 6 | The minute that the alarm clock is set to `BUZZ` at                     |
 |     OUTPUT     | `ALARM_HOURS`   |    -   |                 5 | The hour that the alarm clock is set to `BUZZ` at                       |
 |     OUTPUT     | `BUZZ`          |  High  |                 1 | Signal to buzz an external alarm when the alarm time is reached         |
-|     OUTPUT     | `SEG_SECONDS`   |    -   |                 7 | Seven segment signal for the current seconds the alarm clock has stored |
-|     OUTPUT     | `SEG_MINUTES`   |    -   |                 7 | Seven segment signal for the current minutes the alarm clock has stored |
-|     OUTPUT     | `SEG_HOURS`     |    -   |                 7 | Seven segment signal for the current hours the alarm clock has stored   |
+|     OUTPUT     | `SEG_SECONDS`   |    -   |                14 | Seven segment signal for the current seconds the alarm clock has stored |
+|     OUTPUT     | `SEG_MINUTES`   |    -   |                14 | Seven segment signal for the current minutes the alarm clock has stored |
+|     OUTPUT     | `SEG_HOURS`     |    -   |                14 | Seven segment signal for the current hours the alarm clock has stored   |
 
 ## Deliverables
 - `ConventionalAlarmClock.dig`

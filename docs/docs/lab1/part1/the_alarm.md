@@ -93,7 +93,7 @@ Please modify your display logic to account for this.
 ### Buzzing the Alarm
 
 The last key piece for making an alarm clock work is to provide a `BUZZ` signal so that the TickTock Audio Team can use it to play a song while waking the user up (based on their personal harvested data of course).
-During normal operation, whenever the `MINUTES` == `ALARM_MINUTES` and the `HOURS` == `ALARM_HOURS` and `ALARM_EN == 1`, then the `BUZZ` signal should be set high.
+During normal operation, whenever the `MINUTES` == `ALARM_MINUTES` and the `HOURS` == `ALARM_HOURS` and `ALARM_EN == 0`, then the `BUZZ` signal should be set high.
 
 Please add the logic to handle this.
 
