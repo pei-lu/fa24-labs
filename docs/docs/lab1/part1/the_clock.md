@@ -54,7 +54,7 @@ If you refer to the [circuit structure](/docs/lab1/part1#circuit-structure), the
 
 ### Normal Operation
 
-The normal operation of the clock is defined to be **the period where no `SET` signals are high**.
+The normal operation of the clock is defined to be **the period where no `SETUP` signals are high**.
 During this period, the clock will tick away as per [Figure 1](#figure-1), keeping track of time like we would expect a clock to.
 
 Please wire up the correct inputs to the `BabylonianClock` to observe this normal operation.

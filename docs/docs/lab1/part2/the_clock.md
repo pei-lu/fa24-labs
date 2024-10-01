@@ -17,7 +17,7 @@ nav_order: 1
 
 ---
 
-Your previous product (the *Conventional Alarm Clock*) was a overnight hit!
+Your previous product (the *Conventional Alarm Clock*) was an overnight hit!
 People were lining up around the doors (virtually on their phones) to order it from the TickTok shop.
 Pleased with all the people you are waking up now, you decide to try something a little more radical.
 Recently, TickTok has performed some user studies, and found that majority of Gen Z finds the current metric of keeping time to be very confusing.
@@ -29,10 +29,9 @@ Some user responses are provided below:
 
 > Not as simple as a hundred, everything should be 💯.
 
-With your recent successes, the higher ups at TickTok have decided to let you perform some R&D on creating a new clock for Generation Alpha.
+With your recent successes, the higher ups at TickTok have decided to let you perform some R&D on creating a new clock for Gen Z.
 After your happy acceptance, you start realizing how difficult it is to create a new scale of time.
-You decide to consult the classics, and hope someone before you had layed out some foundation that you can ~~copy~~ build on.
-Thanks to the TickTok algorithm though, you were able to find traces of the "French Republican Calendar".
+Thanks to the TickTok TimeSearch algorithm though, you were able to find traces of something promising called the "French Republican Calendar".
 
 During the late 18th century (yes during the Reign of Terror), French revolutionaries attempted to create a calendar that introduced some sort of regularity.
 While loading the next bourgeois sacrifice to the chopping block, revolutionaries were also busy modernizing calendars.
@@ -58,9 +57,12 @@ All of your work should be in a new circuit called `FrenchRepublicanAlarmClock` 
 
 Unlike [Part 1](/docs/lab1/part1), the rest of this lab will have more discovery required on your part.
 A great place to start would be to see how you can modify your `ConventionalAlarmClock` to fit the requirements for the `FrenchRepublicanAlarmClock`.
-You may quickly realize that there the `BabylonianClock` component has inherent limitations, and can't simply reuse whatever your mentor has provided for you last.
-It is up to you to implement the functionality of the `BabylonianClock` by yourself.
+You may quickly realize that the `BabylonianClock` component has inherent limitations for repurposing, you and can't simply reuse it for this case.
+It is up to you to modify the functionality of the `BabylonianClock` by yourself and implement it in your circuit.
 You can see how the `BabylonianClock` was implemented for inspiration by opening it in *Digital* or by checking out the [previous section](/docs/lab1/part1/provided_components#babylonianclock).
+
+{: .note}
+Do not modify `BabylonianClock`! Either create a new embedded circuit and include it in your `FrenchRepublicanAlarmClock` circuit or implement the logic into the `FrenchRepublicanAlarmClock` circuit itself.
 
 Remember, your final circuit should implement:
 - The correct time functionality (outlined in **bold** in the lore above)

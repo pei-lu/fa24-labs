@@ -21,7 +21,7 @@ nav_order: 2
 This is an optional bonus part of the lab, and should be attempted after finishing the non-optional part of the French Republican Calendar.
 
 After finishing the base French Republican Calendar Alarm Clock (and more importantly, restocking the Advil), you decide to take a stab at handling complementary days.
-To remind yourself what complementary days are, you check your notes and read that at the **end of every year, there are 5 extra days (6 extra days in leap years)**.
+To remind yourself what complementary days are, you check your notes and read that at the **end of every year, there are 5 extra days (6 extra days in leap years)** that were designated as national holidays at the end of every year.
 You find that **years that are `year mod 4 = 3` are leap years**.
 You decide that since you have the space, you can define a 13th "month" that holds these complementary days.
 

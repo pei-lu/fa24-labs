@@ -20,8 +20,8 @@ nav_order: 2
 With a working clock, you decide to make it an **alarm** clock.
 You think deeply about what are the major components of making an alarm work, and decided that there are two; setting the alarm and sounding the alarm.
 
-With the ideas still fresh in your mind, you create the flowchart in [Figure 1](#figure-1) that combines the setting logic of your clock alongside with the logic for setting the alarm functionality.
-You then also think about how to create a mechanism for the alarm to sound on the set time, and with that in mind you create another flowchart for you to use in [Figure 2](#figure-2).
+With the ideas still fresh in your mind, you create the flowchart in [Figure 3](#figure-3) that combines the setting logic of your clock alongside with the logic for setting the alarm functionality.
+You then also think about how to create a mechanism for the alarm to sound on the set time, and with that in mind you create another flowchart for you to use in [Figure 4](#figure-4).
 
 However, you are still stumped on how to store the alarm time, but you figure that you can just create another `BabylonianClock` component to store the information that you want.
 
@@ -93,14 +93,14 @@ Please modify your display logic to account for this.
 
 ### Buzzing the Alarm
 
-The last key piece for making an alarm clock work is to provide a `BUZZ` signal so that the TickTock Audio Team can use it to play a song while waking the user up (based on their personal harvested data of course).
+The last key piece for making an alarm clock work is to provide a `BUZZ` signal so that the TickTok Audio Team can use it to play a song while waking the user up (based on their personal harvested data of course).
 During normal operation, whenever the `MINUTES` == `ALARM_MINUTES` and the `HOURS` == `ALARM_HOURS` and `ALARM_EN == 0`, then the `BUZZ` signal should be set high.
 
 Please add the logic to handle this.
 
 ## Figures
 
-### Figure 1
+### Figure 3
 Setting the Alarm Clock
 {: .text-delta}
 ```mermaid
@@ -118,8 +118,8 @@ flowchart LR
     D1{HR_ADV ⎽⎽/⎺⎺ ?}
     E["hours = hours + 1
        display(hours)"]
-    E1["alarm_minutes = alarm_minutes + 1
-       display(alarm_minutes)"]
+    E1["alarm_hours = alarm_hours + 1
+       display(alarm_hours)"]
 
     A -->|No| A1
     A -->|Yes| A2
@@ -141,7 +141,7 @@ flowchart LR
     time & alarm -->|After Operation| A
 ```
 
-### Figure 2 
+### Figure 4 
 Setting the Alarm Clock
 {: .text-delta}
 ```mermaid

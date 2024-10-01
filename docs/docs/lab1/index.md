@@ -40,12 +40,40 @@ Your task consists of three distinct parts, each building upon the last:
 
 1. **The Conventional Alarm Clock**
 
-2. **The French Republican Calendar Alarm Clock**
+2. **The French Republican Alarm Clock**
 
-3. **The Extended French Republican Calendar Clock**
+3. **The French Republican Calendar Alarm Clock**
+
+## Lab Report
+
+Please write a lab report that contains the following information:
+- Your name and PID
+- Pictures of your final circuits for each part (including embedded circuits)
+- Answers to lab questions posed throughout the lab.
+
+{: .highlight-title}
+> Lab Report
+>
+> Questions throughout the lab will be enclosed in a box like this with the title **Lab Report**
+
+## Deliverables
+
+Please submit the following files to Gradescope **individually**:
+
+- `ConventionalAlarmClock.v`
+- `FrenchRepublicanAlarmClock.v`
+- `FrenchRepublicanCalendarAlarmClock.v`
+- All `.dig` files you have used 
+- PDF of your [lab report](#lab-report)
 
 ## Grading
 
+{: .important}
+The grades are not finalized.
+Please check back before lab 1 is due.
 
-## Conclusion
-The craft of the digital clocksmith is both an art and a science. As you progress through this lab, you'll gain the skills necessary to not only design functional digital clocks but also to adapt them to complex and unconventional timekeeping systems. The challenge is yours to meet—can you master the intricacies of time itself?
+* [Part 1](/docs/lab1/part1): 30%
+* [Part 2](/docs/lab1/part2): 40%
+* [Part 3](/docs/lab1/part3): 30%
+* [Lab Report](#lab-report): ???
+* [Bonus](/docs/lab1/part3/complementary_days): 15%

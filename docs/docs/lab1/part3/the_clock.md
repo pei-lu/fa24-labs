@@ -33,7 +33,7 @@ Your boss turns this idea down, claiming that no reasonable bear would ever cons
 He instead suggests you add it to your "simpler" alarm clock.
 After leaving the meeting room (with a massive headache), you decide to calm your mind and research how to implement this silly task.
 
-Upon closer inspection, it seems that these French revolutionaires gave up on their simpler system, and their higher order units of time became a bit more irregular.
+Upon closer inspection, it seems that these French revolutionaries gave up on their simpler system, and their higher order units of time became a bit more irregular.
 The French Republican Calendar has **10 days in a week, 3 weeks in a month, and 12 months in a year**.
 This however results in a 5-6 days (the *complementary days*) fewer in a year than the convetional calendar we use today.
 You decide that you don't have enough Advil to worry about this at the current moment.
