@@ -32,7 +32,7 @@ October 14th, 2024
 ## Lore
 
 In the bustling workshop of TickTok Incorporated, you, an eager apprentice, have been tasked with bringing the craft of timekeeping into the digital age.
-No longer confined to the gears and springs of traditional clocks, your master has entrusted you with the mission of creating digital clocks using *Digital*.
+No longer confined to the gears and springs of traditional clocks, your mentor has entrusted you with the mission of creating digital clocks using *Digital*.
 
 ## Goals
 The goal of this lab is to familiarize you with *Digital* by implementing alarm clocks based on a variety of calendars.

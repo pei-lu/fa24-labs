@@ -29,23 +29,33 @@ cd CSE140L
 The repository structure is as follows:
 
 ```
-fa24-labs/
+CSE140L/
 ├── labX
 │   ├── Makefile
 │   ├── schematics
 │   ├── simulator
+│   ├── tests
 │   └── verilog
+├── libdig
 ├── Makefile
 └── README.md
 ```
 
 Within each `labX` directory, you are given a `schematics/` directory for you to use as a workspace for that lab.
 All *Digital* files should be created and saved in that directory.
-Additionally, any *Digital* files that we provide (like for [lab 1](/docs/lab1/part1/provided_components.md)) will be saved in the `schematics` directory.
+This is to ensure that 
+
+{: .important}
+Any *Digital* files that we provide (like for [lab 1](/docs/lab1/part1/provided_components.md)) will be saved in the `libdig` directory.
+Please consult [this page](/docs/getting_started/using_digital#library) on how to load in the library to *Digital*.
 
 ## Updating the Repository
 
+We might issue updates to the repository during labs, either to fix issues that students have raised or to introduce new features.
+We will make announcements whenever there are updates on Piazza.
+
 When in the repository, you should be able to run:
+
 ```
 git pull origin master
 ```

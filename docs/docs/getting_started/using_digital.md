@@ -30,6 +30,14 @@ All of these topics are expected to be known for all the lab assignments in this
 
 Please check this page frequently if there are any additional updates that we require (we will also announce these).
 
+### Library
+
+For some labs, we provide some components as a starter.
+To use these components, please [clone the lab repository](/docs/getting_started/lab_repo#cloning-the-repository).
+Then, in *Digital* navigate to the library settings and find the path to the [`libdig`](/docs/getting_started/lab_repo#navigating-the-repository) folder in the lab repository (`Edit > Settings > Advanced`).
+
+You should now be able to use the library components at `Components > Library`.
+
 ### Labels
 
 Labels are a way to name any component (i.e gates, flip-flops, latches, wires, modules, etc.).
