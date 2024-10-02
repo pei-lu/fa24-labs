@@ -50,6 +50,7 @@ Please write a lab report that contains the following information:
 - Your name and PID
 - Pictures of your final circuits for each part (including embedded circuits)
 - Answers to lab questions posed throughout the lab.
+- Explanations on how you modified the circuit from Part 1 to the circuits in Part 2 and Part 3.
 
 {: .highlight-title}
 > Lab Report
@@ -72,8 +73,8 @@ Please submit the following files to Gradescope **individually**:
 The grades are not finalized.
 Please check back before lab 1 is due.
 
-* [Part 1](/docs/lab1/part1): 30%
-* [Part 2](/docs/lab1/part2): 40%
+* [Part 1](/docs/lab1/part1): 25%
+* [Part 2](/docs/lab1/part2): 35%
 * [Part 3](/docs/lab1/part3): 30%
-* [Lab Report](#lab-report): ???
+* [Lab Report](#lab-report): 10%
 * [Bonus](/docs/lab1/part3/complementary_days): 15%

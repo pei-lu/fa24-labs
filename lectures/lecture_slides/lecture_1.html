@@ -42,7 +42,8 @@
 			<div class="slides">
 				<section>
           <h1>CSE 140L</h1>
-          <h3>Digital Alarm Clock</h3>
+          <h3>Lab 1 Digital Alarm Clock</h3>
+          Due October 14th, 2024
         </section>
 
         <section>
@@ -165,10 +166,10 @@
                   end 
 
                   subgraph time [setting time]
-                  A2 -->|Yes| B & D
-                  A2 -->|No| F["Not possible"]
-                  B -->|Yes| C
-                  D -->|Yes| E
+                  A2 -->|No| B & D
+                  A2 -->|Yes| F["Not possible"]
+                  B -->|No| C
+                  D -->|No| E
                   end
 
                   time & alarm -->|After Operation| A
@@ -192,7 +193,7 @@
               <li>Highly regular, decimal based</li>
             </ul>
 
-            <img src="assets/french_clock.png">
+            <img src="assets/french_clock.png" height="200px">
           </section>
           <section data-auto-animate>
             <p class="h2">French Republican Alarm Clock</p>
@@ -201,7 +202,7 @@
               <li>Operation is similar to conventional alarm clock</li>
               <li>
                 Time scale
-                <ul>
+                <ul style="font-size: 20px;">
                   <li>100 seconds in a minute</li>
                   <li>100 minutes in a hour</li>
                   <li>10 hours in a day</li>
@@ -212,9 +213,10 @@
               </li>
               <li>
                 5 days are an end-of-the-year holiday
-                <ul>
+                <ul style="font-size: 20px">
                   <li>6 days on leap years</li>
                   <li>These are called <em>complementary days</em>
+                </ul>
               </li>
               <li>Only keep track of hours, minutes, and seconds for this part</p>
             </ul>
@@ -247,7 +249,7 @@
             <p class="list-start">Handling complementary days</p>
             <ul>
               <li>Complementary days are the 5 extra days in a year (6 for a leap year)</li>
-              <li>Keep track of the extra days by creating an imaginary month</li>
+              <li>Keep track of the extra days by creating a 13th month</li>
               <li>Need to rollover the 13th month after 5-6 days (depending on leap year)</li>
               <li>Leap years satisfy: <pre> year mod 4 = 3 </pre></li>
             </ul>
@@ -258,6 +260,7 @@
             <p class="list-start">Hint</p>
             <ul>
               <li>Leap years will always have what value in the last two LSB?</li>
+              <li>At which point do you roll over the 13th month and what affects that logic?</li>
             </ul>
           </section>
 

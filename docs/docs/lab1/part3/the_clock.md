@@ -46,6 +46,11 @@ After a normal dosage of Advil, you sit down and get to work.
 
 ## Instructions
 
+{: .highlight-title}
+> Lab Report
+>
+> **Question 5:** Please explain your logic for rolling over the day of the week, week of the month, month of the year.
+
 All of your work should be in a new circuit called `FrenchRepublicanCalendarAlarmClock` (it will save as `FrenchRepublicanCalendarAlarmClock.dig`).
 
 You have been given some [more signals](/docs/lab1/part3#circuit-structure) than the previous parts, namely:

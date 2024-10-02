@@ -132,10 +132,10 @@ flowchart LR
     end 
 
     subgraph time [setting time]
-    A2 -->|Yes| B & D
-    A2 -->|No| F["Not possible"]
-    B -->|Yes| C
-    D -->|Yes| E
+    A2 -->|No| B & D
+    A2 -->|Yes| F["Not possible"]
+    B -->|No| C
+    D -->|No| E
     end
 
     time & alarm -->|After Operation| A

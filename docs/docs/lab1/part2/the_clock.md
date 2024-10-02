@@ -53,6 +53,14 @@ Happy with your research, you set off starting to build a French Republican Alar
 
 ## Instructions
 
+{: .hightlight-title}
+> Lab Report
+> 
+> **Question 4:** Clearly, the time standards are different across the Western Calendar and the French Revolutionary Calendar.
+> In the report, show your work on calculating how many conventional seconds a decimal second would correspond to.
+> Although you have probably realized the period of pulse generators in the Western and the French Revolutionary Clocks will need to be adjusted according to this ratio for clocks to keep track of time correctly, you do not need to modify the pulse generators in this assignment, assuming that the manufacturer will combine the appropriate pulse generators with the alarm clocks if your designs become real-life products some day!
+> Similarly, please calculate and show in your report how many conventional minutes a decimal minute would correspond to.
+
 All of your work should be in a new circuit called `FrenchRepublicanAlarmClock` (it will save as `FrenchRepublicanAlarmClock.dig`).
 
 Unlike [Part 1](/docs/lab1/part1), the rest of this lab will have more discovery required on your part.
