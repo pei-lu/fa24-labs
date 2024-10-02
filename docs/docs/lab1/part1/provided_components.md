@@ -59,20 +59,16 @@ This means that the only time this reset signal could be 1 is when the counter i
 Both of these values are &ge; 59, and hence we don't care whether the 2nd bit is a `1` or a `0`, so we are safe to exclude it from our `AND` gate.
 We can observe a similar thought process for the `MINUTES_COUNTER` and `HOURS_COUNTER`.
 
-Now let's take a closer look at the daisy chaining of the counters.
-You may notice that the `CLK` input is not directly connected to the `MINUTES_COUNTER`, rather it is `AND`ed with the reset logic from the `SECONDS_COUNTER`.
-
 {: .highlight-title}
 > Lab Report
 >
-> **Question 1:** Why is the `CLK` input not directly connected to the `MINUTES_COUNTER`?
+> **Question 1:** Why is the `CLK` input not directly connected to the `MINUTES_COUNTER` or the `HOURS_COUNTER`?
 
 Now to the setup logic.
 For the `SECONDS_COUNTER`, the `C` pin is calculated by `CLK AND (NOT SETUP_TIME)`.
 This means that if `SETUP_TIME` is high, then no matter what the `CLK` is, the `SECONDS_COUNTER` will not advance (hence freezing up the rest of the system).
 However, when `SETUP_TIME` is low, then the value of the `CLK` is passed to the `SECONDS_COUNTER`, making the system behave as normal.
 The `SETUP_TIME` signal is used to pulse the `MINUTES_COUNTER` and `HOURS_COUNTER` in conjunction with their `_ADV` signals.
-
 
 {: .highlight-title}
 > Lab Report
