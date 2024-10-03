@@ -8,13 +8,13 @@ nav_order: 4
 # Podman
 
 {: .note}
-Podman isn't necessary to complete the labs, but we strongly recommend to install Podman to run the [repository](/docs/getting_started/lab_repo) we provide.
+Podman isn't necessary to complete the labs, but we strongly recommend to install Podman to run the [repository](https://cse140l.github.io/fa24-labs/docs/getting_started/lab_repo) we provide.
 
 {: .important-title}
 > Windows Users
 > 
 > Windows users are highly recommended to use [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) to ensure full compatibility with the lab.
-> Additionally, please see the [Windows Users](/docs/getting_started/installing_podman#windows-users) section below.
+> Additionally, please see the [Windows Users](https://cse140l.github.io/fa24-labs/docs/getting_started/installing_podman#windows-users) section below.
 
 ## Podman
 

@@ -18,7 +18,7 @@ nav_order: 2
 
 ## Introduction to Digital
 
-*Digital* has a fantastic documentation (see [Documentation](/docs/getting_started/installing_digital#documentation)) that encompasses all the features that the simulator provides.
+*Digital* has a fantastic documentation (see [Documentation](https://cse140l.github.io/fa24-labs/docs/getting_started/installing_digital#documentation)) that encompasses all the features that the simulator provides.
 In particular, we urge you to complete chapter 1 of the documentation to get a good feel for the tool. 
 This chapter is a fantastic introduction to the tool, covering how to place gates, draw wires, inputs and outputs, and hierarchies.
 All of these topics are expected to be known for all the lab assignments in this quarter.
@@ -33,8 +33,8 @@ Please check this page frequently if there are any additional updates that we re
 ### Library
 
 For some labs, we provide some components as a starter.
-To use these components, please [clone the lab repository](/docs/getting_started/lab_repo#cloning-the-repository).
-Then, in *Digital* navigate to the library settings and find the path to the [`libdig`](/docs/getting_started/lab_repo#navigating-the-repository) folder in the lab repository (`Edit > Settings > Advanced`).
+To use these components, please [clone the lab repository](https://cse140l.github.io/fa24-labs/docs/getting_started/lab_repo#cloning-the-repository).
+Then, in *Digital* navigate to the library settings and find the path to the [`libdig`](https://cse140l.github.io/fa24-labs/docs/getting_started/lab_repo#navigating-the-repository) folder in the lab repository (`Edit > Settings > Advanced`).
 
 You should now be able to use the library components at `Components > Library`.
 

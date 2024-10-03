@@ -46,8 +46,8 @@ All *Digital* files should be created and saved in that directory.
 This is to ensure that 
 
 {: .important}
-Any *Digital* files that we provide (like for [lab 1](/docs/lab1/part1/provided_components.md)) will be saved in the `libdig` directory.
-Please consult [this page](/docs/getting_started/using_digital#library) on how to load in the library to *Digital*.
+Any *Digital* files that we provide (like for [lab 1](https://cse140l.github.io/fa24-labs/docs/lab1/part1/provided_components.md)) will be saved in the `libdig` directory.
+Please consult [this page](https://cse140l.github.io/fa24-labs/docs/getting_started/using_digital#library) on how to load in the library to *Digital*.
 
 ## Updating the Repository
 
