@@ -1,0 +1,43 @@
+#clock > div {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    font-size: 0;
+}
+
+#clock div:nth-child(odd):not(:last-child)::after,
+#clock div:nth-child(odd):not(:last-child)::before {
+    content: '';
+    position: absolute;
+    right: -30px;
+    width: 20px;
+    height: 20px;
+    background-color: #0984e3;
+}
+
+#clock div:nth-child(odd):not(:last-child)::after,
+#clock div:nth-child(odd):not(:last-child)::after {
+    top: 80px;
+}
+#clock div:nth-child(odd):not(:last-child)::before,
+#clock div:nth-child(odd):not(:last-child)::before {
+    top: 180px;
+}
+
+#clock svg {
+    display: inline-block;
+    margin: 20px;
+}
+
+#clock svg .segment {
+    fill: rgba(0,0,0,.15);
+    transition: .1s ease-in-out;
+}
+
+#clock svg .on {
+    fill: #0984e3;
+}
+
+#clock svg .on.segment-green {
+    fill: #00b478;
+}
