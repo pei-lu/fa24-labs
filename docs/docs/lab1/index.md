@@ -7,12 +7,6 @@ nav_order: 3
 # Digital Alarm Clock
 {: .no_toc}
 
-{: .warning-title}
-> Unfinished Lab
-> 
-> We are currently working on finalizing the finer points of the lab.
-> Things are subject to change without notice, and files might be missing.
-
 #### Assigned
 {: .no_toc}
 October 2nd, 2024
@@ -68,10 +62,6 @@ Please submit the following files to Gradescope **individually**:
 - PDF of your [lab report](#lab-report)
 
 ## Grading
-
-{: .important}
-The grades are not finalized.
-Please check back before lab 1 is due.
 
 * [Part 1](/docs/lab1/part1): 25%
 * [Part 2](/docs/lab1/part2): 35%
