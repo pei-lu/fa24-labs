@@ -42,8 +42,8 @@ CSE140L/
 ```
 
 Within each `labX` directory, you are given a `schematics/` directory for you to use as a workspace for that lab.
-All *Digital* files should be created and saved in that directory.
-This is to ensure that 
+**All *Digital* files that you create for a lab should be created and saved in that directory.**
+This is to ensure that your files will work with the testbenches we provide, as well as the simulation software.
 
 {: .important}
 Any *Digital* files that we provide (like for [lab 1](https://cse140l.github.io/fa24-labs/docs/lab1/part1/provided_components)) will be saved in the `libdig` directory.
@@ -57,5 +57,5 @@ We will make announcements whenever there are updates on Piazza.
 When in the repository, you should be able to run:
 
 ```
-git pull origin master
+git pull
 ```

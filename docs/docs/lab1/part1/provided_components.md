@@ -17,6 +17,10 @@ nav_order: 3
 
 ---
 
+{: .important}
+These files are **provided** to you, please visit this [section](https://cse140l.github.io/fa24-labs/docs/getting_started/using_digital#library) to get started with this process.
+It is important to setup these provided files as a library, that way if we provide any updates, you don't have to do any more work other than just [updating the lab repository](https://cse140l.github.io/fa24-labs/docs/getting_started/lab_repo#updating-the-repository).
+
 {: .note}
 Please pay attention to capitalization of pin names as they could be referencing different components.
 If you have any doubts, please ask a question on Piazza.

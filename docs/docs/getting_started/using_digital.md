@@ -35,6 +35,7 @@ Please check this page frequently if there are any additional updates that we re
 For some labs, we provide some components as a starter.
 To use these components, please [clone the lab repository](https://cse140l.github.io/fa24-labs/docs/getting_started/lab_repo#cloning-the-repository).
 Then, in *Digital* navigate to the library settings and find the path to the [`libdig`](https://cse140l.github.io/fa24-labs/docs/getting_started/lab_repo#navigating-the-repository) folder in the lab repository (`Edit > Settings > Advanced`).
+Restart *Digital*
 
 You should now be able to use the library components at `Components > Library`.
 
