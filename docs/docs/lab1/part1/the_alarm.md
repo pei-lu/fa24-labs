@@ -35,11 +35,11 @@ However, you are still stumped on how to store the alarm time, but you figure th
 
 ## Instructions
 
-All of your work should be in the same circuit from the [previous section](/docs/lab1/part1/the_clock) called `ConventionalAlarmClock` (it will save as `ConventionalAlarmClock.dig`).
+All of your work should be in the same circuit from the [previous section](https://cse140l.github.io/fa24-labs/docs/lab1/part1/the_clock) called `ConventionalAlarmClock` (it will save as `ConventionalAlarmClock.dig`).
 
 Your task is to add alarm functionalities to your existing clock.
 
-If you refer to the [circuit structure](/docs/lab1/part1#circuit-structure), there are a couple of important inputs to keep in mind for this section:
+If you refer to the [circuit structure](https://cse140l.github.io/fa24-labs/docs/lab1/part1#circuit-structure), there are a couple of important inputs to keep in mind for this section:
 - `ALARM_EN`
 - `SETUP_ALARM`
 - `MIN_ADV`

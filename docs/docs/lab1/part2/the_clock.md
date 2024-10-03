@@ -63,11 +63,11 @@ Happy with your research, you set off starting to build a French Republican Alar
 
 All of your work should be in a new circuit called `FrenchRepublicanAlarmClock` (it will save as `FrenchRepublicanAlarmClock.dig`).
 
-Unlike [Part 1](/docs/lab1/part1), the rest of this lab will have more discovery required on your part.
+Unlike [Part 1](https://cse140l.github.io/fa24-labs/docs/lab1/part1), the rest of this lab will have more discovery required on your part.
 A great place to start would be to see how you can modify your `ConventionalAlarmClock` to fit the requirements for the `FrenchRepublicanAlarmClock`.
 You may quickly realize that the `BabylonianClock` component has inherent limitations for repurposing, you and can't simply reuse it for this case.
 It is up to you to modify the functionality of the `BabylonianClock` by yourself and implement it in your circuit.
-You can see how the `BabylonianClock` was implemented for inspiration by opening it in *Digital* or by checking out the [previous section](/docs/lab1/part1/provided_components#babylonianclock).
+You can see how the `BabylonianClock` was implemented for inspiration by opening it in *Digital* or by checking out the [previous section](https://cse140l.github.io/fa24-labs/docs/lab1/part1/provided_components#babylonianclock).
 
 {: .note}
 Do not modify `BabylonianClock`! Either create a new embedded circuit and include it in your `FrenchRepublicanAlarmClock` circuit or implement the logic into the `FrenchRepublicanAlarmClock` circuit itself.

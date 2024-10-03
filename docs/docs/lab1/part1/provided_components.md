@@ -23,7 +23,7 @@ If you have any doubts, please ask a question on Piazza.
 
 ## `BabylonianClock`
 
-This component that your mentor has provided you satisfies the [flowchart](/docs/lab1/part1/the_clock#figure-1) from the [clock](/docs/lab1/part1/the_clock) stage of your circuit.
+This component that your mentor has provided you satisfies the [flowchart](https://cse140l.github.io/fa24-labs/docs/lab1/part1/the_clock#figure-1) from the [clock](https://cse140l.github.io/fa24-labs/docs/lab1/part1/the_clock) stage of your circuit.
 
 ### Ports 
 

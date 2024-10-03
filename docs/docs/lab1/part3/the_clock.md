@@ -53,7 +53,7 @@ After a normal dosage of Advil, you sit down and get to work.
 
 All of your work should be in a new circuit called `FrenchRepublicanCalendarAlarmClock` (it will save as `FrenchRepublicanCalendarAlarmClock.dig`).
 
-You have been given some [more signals](/docs/lab1/part3#circuit-structure) than the previous parts, namely:
+You have been given some [more signals](https://cse140l.github.io/fa24-labs/docs/lab1/part3#circuit-structure) than the previous parts, namely:
 - `DAY_ADV`
 - `WEEK_ADV`
 - `MONTH_ADV`

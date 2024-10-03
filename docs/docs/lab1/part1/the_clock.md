@@ -45,7 +45,7 @@ All of your work should be in a new circuit called `ConventionalAlarmClock` (it 
 You are given a `BabylonianClock` component, which implements the logic discussed in [Figure 1](#figure-1).
 Your task is to implement a scaffolding around this component which allows the user to manually set the minutes and hours of the clock.
 
-If you refer to the [circuit structure](/docs/lab1/part1#circuit-structure), there are a couple of important inputs to keep in mind:
+If you refer to the [circuit structure](https://cse140l.github.io/fa24-labs/docs/lab1/part1#circuit-structure), there are a couple of important inputs to keep in mind:
 - `CLK`
 - `CLR`
 - `SETUP_TIME`
