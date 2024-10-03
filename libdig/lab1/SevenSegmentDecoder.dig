@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes>
+    <entry>
+      <string>shapeType</string>
+      <shapeType>LAYOUT</shapeType>
+    </entry>
+    <entry>
+      <string>romContent</string>
+      <romList>
+        <roms/>
+      </romList>
+    </entry>
+    <entry>
+      <string>lockedMode</string>
+      <boolean>true</boolean>
+    </entry>
+    <entry>
+      <string>Width</string>
+      <int>8</int>
+    </entry>
+  </attributes>
+  <visualElements>
+    <visualElement>
+      <elementName>LookUpTable</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>14</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>7e,30,6d,79,33,5b,5f,70,7f,7b,187e,1830,186d,1879,1833,185b,185f
+,1870,187f,187b,36fe,36b0,36ed,36f9,36b3,36db,36df,36f0,36ff,36fb
+,3cfe,3cb0,3ced,3cf9,3cb3,3cdb,3cdf,3cf0,3cff,3cfb,19fe,19b0,19ed
+,19f9,19b3,19db,19df,19f0,19ff,19fb,2dfe,2db0,2ded,2df9,2db3,2ddb
+,2ddf,2df0,2dff,2dfb,2ffe,2fb0,2fed,2ff9,2fb3,2fdb,2fdf,2ff0,2fff
+,2ffb,387e,3830,386d,3879,3833,385b,385f,3870,387f,387b,3ffe,3fb0
+,3fed,3ff9,3fb3,3fdb,3fdf,3ff0,3fff,3ffb,3dfe,3db0,3ded,3df9,3db3
+,3ddb,3ddf,3df0,3dff,3dfb</data>
+        </entry>
+        <entry>
+          <string>Inputs</string>
+          <int>7</int>
+        </entry>
+      </elementAttributes>
+      <pos x="780" y="320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>DATA_IN</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>7</int>
+        </entry>
+      </elementAttributes>
+      <pos x="520" y="320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>7</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>1*7</string>
+        </entry>
+      </elementAttributes>
+      <pos x="580" y="320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>DATA_OUT</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>14</int>
+        </entry>
+      </elementAttributes>
+      <pos x="920" y="380"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="600" y="320"/>
+      <p2 x="780" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="520" y="320"/>
+      <p2 x="580" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="400"/>
+      <p2 x="780" y="400"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="340"/>
+      <p2 x="780" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="420"/>
+      <p2 x="780" y="420"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="360"/>
+      <p2 x="780" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="440"/>
+      <p2 x="780" y="440"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="380"/>
+      <p2 x="780" y="380"/>
+    </wire>
+    <wire>
+      <p1 x="840" y="380"/>
+      <p2 x="920" y="380"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
