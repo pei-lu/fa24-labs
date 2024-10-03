@@ -49,11 +49,11 @@ The following ports should be opened for the `FrenchRepublicanAlarmClock`:
 |      INPUT     | `MIN_ADV`       |  High  |                 1 | Increments the minute signal whenever either `SETUP` signals are active |
 |      INPUT     | `HR_ADV`        |  High  |                 1 | Increments the hour signal whenever either `SETUP` signals are active   |
 |      INPUT     | `ALARM_EN`      |   Low  |                 1 | Enables the buzzer when the alarm time is reached                       |
-|     OUTPUT     | `SECONDS`       |    -   |                 6 | The current seconds the alarm clock has stored                          |
-|     OUTPUT     | `MINUTES`       |    -   |                 6 | The current minutes the alarm clock has stored                          |
-|     OUTPUT     | `HOURS`         |    -   |                 5 | The current hours the alarm clock has stored                            |
-|     OUTPUT     | `ALARM_MINUTES` |    -   |                 6 | The minute that the alarm clock is set to `BUZZ` at                     |
-|     OUTPUT     | `ALARM_HOURS`   |    -   |                 5 | The hour that the alarm clock is set to `BUZZ` at                       |
+|     OUTPUT     | `SECONDS`       |    -   |                 7 | The current seconds the alarm clock has stored                          |
+|     OUTPUT     | `MINUTES`       |    -   |                 7 | The current minutes the alarm clock has stored                          |
+|     OUTPUT     | `HOURS`         |    -   |                 4 | The current hours the alarm clock has stored                            |
+|     OUTPUT     | `ALARM_MINUTES` |    -   |                 7 | The minute that the alarm clock is set to `BUZZ` at                     |
+|     OUTPUT     | `ALARM_HOURS`   |    -   |                 4 | The hour that the alarm clock is set to `BUZZ` at                       |
 |     OUTPUT     | `BUZZ`          |  High  |                 1 | Signal to buzz an external alarm when the alarm time is reached         |
 |     OUTPUT     | `SEG_SECONDS`   |    -   |                14 | Seven segment signal for the seconds the alarm clock has displayed      |
 |     OUTPUT     | `SEG_MINUTES`   |    -   |                14 | Seven segment signal for the minutes the alarm clock has displayed      |
