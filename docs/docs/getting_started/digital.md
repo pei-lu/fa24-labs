@@ -19,7 +19,7 @@ nav_order: 2
 ## Introduction
 
 [*Digital*](https://github.com/hneemann/Digital) is a **gate-level digital logic hardware simulator**.
-Let's break things down one at a time, starting with what a [hardware simulator](https://cse140l.github.io/fa24-labs/docs/getting_started/digital#hardware-simulators) is.
+Let's break things down one at a time, starting with what a [hardware simulator](#hardware-simulators) is.
 
 ## Hardware Simulators
 
