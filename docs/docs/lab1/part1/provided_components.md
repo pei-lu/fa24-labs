@@ -47,6 +47,7 @@ The ports of the module are provided below with a description:
 ### Diagram
 
 [//]: <> (Remember to make the background lightgrey by editing the SVG!)
+[//]: <> (style="background-color:lightgrey;")
 ![](../../../assets/lab1/clock.svg)
 
 ### Explanation
