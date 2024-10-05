@@ -7,6 +7,7 @@
    xmlns="http://www.w3.org/2000/svg"
    width="290.25mm"
    height="108.0mm"
+   style="background-color:lightgrey;"
    viewBox="107 -174 1935 720">
 <g stroke-linecap="square">
 <path d="M 1100,436 L 1100,440 L 1100,480 L 1180,480 L 1220,480" stroke="#0000b2" stroke-width="4.0" fill="none"/>
