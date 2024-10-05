@@ -23,7 +23,7 @@ You think deeply about what are the major components of making an alarm work, an
 With the ideas still fresh in your mind, you create the flowchart in [Figure 3](#figure-3) that combines the setting logic of your clock alongside with the logic for setting the alarm functionality.
 You then also think about how to create a mechanism for the alarm to sound on the set time, and with that in mind you create another flowchart for you to use in [Figure 4](#figure-4).
 
-However, you are still stumped on how to store the alarm time, but you figure that you can just create another `BabylonianClock` component to store the information that you want.
+However, you are still stumped on how to store the alarm time, but your mentor comes back again to save the day by providing you a `BabylonianAlarm` component.
 
 
 ## Goals
@@ -51,7 +51,7 @@ If you refer to the [circuit structure](https://cse140l.github.io/fa24-labs/docs
 The `SETUP_TIME` and `SETUP_ALARM` could be high at the same time.
 If this does happen, then your circuit should return back to normal operation (i.e. continue counting like normal).
 
-To store the counters of the variable, you can **repurpose the `BabylonianClock` component by tying some signals to 0 and some signals elsewhere**.
+To store the counters of the variable, you can **use the `BabylonianAlarm` component**.
 
 During the setting time operation, the `SETUP_ALARM` **signal will be high**.
 While this signal is set high, the external clock input (`CLK`) **should not modify the stored time in any way**.

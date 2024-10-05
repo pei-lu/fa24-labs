@@ -90,7 +90,7 @@ HR_ADV : ⎽⎽⎽⎽⎽/⎺⎺\⎽⎽/⎺⎺⎺⎺⎺⎺⎺⎺⎺
 Then the final time the clock should display is `02:03:54` as:
 1. Being in setup mode means that the clock doesn't advance the seconds anymore
 2. `MIN_ADV` had 3 rising edges, hence we have incremented by 3 minutes
-3. `HR_ADV` had 2 rising edges, hence we have incremented by 3 hours
+3. `HR_ADV` had 2 rising edges, hence we have incremented by 2 hours
 
 Please wire up the correct inputs to the `BabylonianClock` to observe this setting time operation.
 
