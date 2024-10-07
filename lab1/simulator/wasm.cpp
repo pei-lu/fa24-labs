@@ -7,7 +7,13 @@ auto* controller = new VConventionalAlarmClock;
 
 #elif defined(PART2)
 
+#include "VFrenchRepublicanAlarmClock.h"
+auto* controller = new VFrenchRepublicanAlarmClock;
+
 #elif defined(PART3)
+
+#include "VFrenchRepublicanCalendarAlarmClock.h"
+auto* controller = new VFrenchRepublicanCalendarAlarmClock;
 
 #endif
 
@@ -83,15 +89,26 @@ extern "C" {
     controller->eval();
   }
 
-  int EMSCRIPTEN_KEEPALIVE get_seconds() {
-    return controller->SECONDS;
+#if defined(PART3)
+  void EMSCRIPTEN_KEEPALIVE advance_day() {
+    controller->HR_ADV = 1;
+    controller->eval();
+    controller->HR_ADV = 0;
+    controller->eval();
   }
 
-  int EMSCRIPTEN_KEEPALIVE get_minutes() {
-    return controller->MINUTES;
+  void EMSCRIPTEN_KEEPALIVE advance_hour() {
+    controller->HR_ADV = 1;
+    controller->eval();
+    controller->HR_ADV = 0;
+    controller->eval();
   }
 
-  int EMSCRIPTEN_KEEPALIVE get_hours() {
-    return controller->HOURS;
+  void EMSCRIPTEN_KEEPALIVE advance_minute() {
+    controller->HR_ADV = 1;
+    controller->eval();
+    controller->HR_ADV = 0;
+    controller->eval();
   }
+#endif // defined(PART3)
 }
