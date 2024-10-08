@@ -29,7 +29,7 @@ Starting from the least significant bit (LSB) of the multiplier, if the $ith$ bi
 This operation is repeated until the most significant bit (MSB) is encountered, which is the sign bit of the multiplier.
 Since the sign bit has a negative weight, we need to subtract the shifted multiplicand from the partial sum (instead of the usual addition) if it is 1.
 The use of a distinct storage element at every step to save the partial sum can be avoided by a simpler implementation that keeps a running total (an accumulation) in a single accumulator register which can be reused in each step.
-Hence, in order to perform $n$-bit multiplication, a $2^{n-1}$ bit accumulator register ($2^{n-1}$ bits suffice to capture the multiplication result of two $n$-bit numbers as long as the two's complement representation of inputs is restricted to the symmetric range of $(-2^{(n-1)}, 2^{(n-1)})$, a 2n-1 bit multiplicand register (because the $n$-bit multiplicand needs to be shifted left $n-1$ times) and an $n$-bit multiplier register would be required.
+Hence, in order to perform $n$-bit multiplication, a $2n-1$ bit accumulator register ($2n-1$ bits suffice to capture the multiplication result of two $n$-bit numbers as long as the two's complement representation of inputs is restricted to the symmetric range of $(-2^{(n-1)}, 2^{(n-1)})$), a $2n-1$ bit multiplicand register (because the $n$-bit multiplicand needs to be shifted left $n-1$ times) and an $n$-bit multiplier register would be required.
 Can this hardware outlay be reduced even further? 
 The answer is a resounding yes when you consider the following two observations:
 
@@ -62,7 +62,7 @@ Of course, you realize that the corner-cutting of NumeriCorp has made this issue
 There is one more implementation detail that merits consideration. As each step consists of the partial sum being added to the multiplicand (after appropriate alignment, of course) one needs to address the question of the bit width of the needed adder component.
 It is easy to observe that the first addition to the partial result for the LSB will produce an $n$-bit sum, while the final partial sum (and product of the multiplication) which we just discussed can be $2n-1$ bits long.
 While the latter part of this discussion seems to argue in favor of $2n-1$ bit adders, one can notice that at any point the addition will only involve $n$-bit inputs, as any bits of the partial sum to the right of the actual summation will remain constant and unaffected by the operation.
-While the inputs to the two's complement addition that underpins the multiplication algorithm can thus be reduced to $n$-bit numbers, we do know that $n$-bit addition (for same sign inputs) is prone to overflow when the output is $n$-bits.
+While the inputs to the two's complement addition that underpins the multiplication algorithm can thus be reduced to $n$-bit numbers, we do know that $n$-bit addition (for same sign inputs) is prone to overflow when the output is $n+1$-bits.
 To preclude this overflow possibility, we will start you off in this exercise with an $n+1$ bit adder.
 At the inputs of the adder, we will need to replicate the most significant $n$th bit and connect to the $(n+1)$th bit position, effectively performing a sign extension at the input space.
 

@@ -56,7 +56,7 @@ The former step of "Add" (or perhaps more accurately called "Add/Subtract") is c
 For starters, as we know, the actual operation to be executed in Booth’s multiplication alternates between subtraction and addition (hopefully with long bouts of doing nothing in between).
 In this particular implementation, for simplicity, we will forgo luxuriating in laziness and instead have the algorithm execute an operation every cycle.
 To ensure correct execution of the overall algorithm, we will end up throwing away (i.e. not load) the result of the addition/subtraction in many of the cases.
-All `EX_OP` denotes is that we are indeed on an operation (i.e. an "Add/Subtract") cycle; It is up to you, as discussed at the end of the description of Booth’s algorithm, to determine the gate whose output, in conjunction with the `EX_OP` signal indicating that we are on an "Add/Subtract" cycle, will determine whether the result of the addition/subtraction is loaded into the accumulator register.
+All `EX_OP` denotes is that we are indeed on an operation (i.e. an "Add/Subtract") cycle; it is up to you, as discussed at the end of the description of Booth’s algorithm, to determine the gate whose output, in conjunction with the `EX_OP` signal indicating that we are on an "Add/Subtract" cycle, will determine whether the result of the addition/subtraction is loaded into the accumulator register.
 
 Booth’s multiplication algorithm consists of the following steps in the given order:
 

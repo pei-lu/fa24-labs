@@ -27,20 +27,20 @@ Yet a moment's thought helps us realize that, in the binary numbering system, th
 \end{equation}
 
 In the binary numbering system, the left-hand side of Equation (1) is represented by a consecutive sequence of '1's, starting from bit $i$ to bit $i+k$ (counting from the right).
-If we use 1 to represent -1, Equation (1) implies that a standard binary number can be converted into a three-valued (0, 1, and 1) codeword representation.
+If we use 1&#773; to represent -1, Equation (1) implies that a standard binary number can be converted into a three-valued (0, 1, and 1&#773;) codeword representation.
 For instance, assuming $i=1$ and $k=7$, we can get the following transformation:
 
 \begin{equation}
-00111111110 = 01000000010
+00111111110 = 010000000\overline{1}0
 \end{equation}
 
 Given this type of transformation, what is its impact on our multiplication algorithm?
 In the generic algorithm, an add/subtract operation would be executed for each 1 in the multiplier.
-On the other hand, Equation (1), and its illustration in Equation (2), imply that a consecutive sequence of 1's in the multiplier, starting from bit $i$ to bit $i+k$, can be converted into nothing more than a 1 at bit $i$ and a 1 at bit $i+k+1$.
+On the other hand, Equation (1), and its illustration in Equation (2), imply that a consecutive sequence of 1's in the multiplier, starting from bit $i$ to bit $i+k$, can be converted into nothing more than a 1&#773; at bit $i$ and a 1 at bit $i+k+1$.
 Therefore, all the additions needed for bit $i, i+1, ..., i+k$ can be replaced by an addition for bit $i+k+1$ and a subtraction for bit $i$. In this way, we can replace the consecutive sequence of additions with only two operations!
 
-Scanning the multiplier from right to left, how do we detect where to place a 1 and where to place a 1?
-The discussion heretofore indicates that we need a 1 for the starting point of the sequence of 1's, that is, when we encounter a 0→1 transition as we scan from right to left (i.e. the sequence '10' as it appears written in left-to-right form).
+Scanning the multiplier from right to left, how do we detect where to place a 1 and where to place a 1&#773;?
+The discussion heretofore indicates that we need a 1&#773; for the starting point of the sequence of 1's, that is, when we encounter a 0→1 transition as we scan from right to left (i.e. the sequence '10' as it appears written in left-to-right form).
 Similarly, we need a 1 for the finishing point of the sequence of 1's, that is, when we encounter a 1→0 transition (i.e. '01').
 This is what is implemented in Booth's algorithm.
 Rather than simply looking at bit i of the multiplier to determine whether to add or not, in Booth's we examine two bits at a time: bit i and the bit immediately to its right.
@@ -48,11 +48,11 @@ If we see a sequence of 1's starting from bit $i$ to bit $i+k$, we can simply pe
 One thing that you may worry about is what happens to negative 2's complement multipliers and whether any special treatment needs to be accorded to them.
 It turns out that Booth's encoding has the extra benefit that negative numbers require no special handling whatsoever as Booth's encoding will automatically generate representations with the correct value embedded.
 Perhaps one way to realize this is that in the case of a two's complement negative number, one or more consecutive bits of 1's are in the most significant positions.
-Since there is no 1→0 transition (i.e. '01') at the most significant bit, the last non zero bit in the right-to-left sweep through the encoded multiplier will be a 1.
+Since there is no 1→0 transition (i.e. '01') at the most significant bit, the last non zero bit in the right-to-left sweep through the encoded multiplier will be a 1&#773;.
 This guarantees that the resultant representation is indeed negative.
-For example, the two's complement number 11111000110 transforms into 00001001010.
+For example, the two's complement number 11111000110 transforms into 00001&#773;00101&#773;0.
 Both bit strings represent the (negative) value -58.
-(For those of you a bit more into number theory, please note that the conversion into the Booth's representation, accords the MSB the regular treatment as if it were a position with positive $2^{(n-1)}$, whereas it should have been accorded the negative weight of $-2^{(n-1)}$, the difference of $2^n$ being exactly what would have been forthcoming, should we have completed the squaring of the books by having an extra 1 at the left end of the word, worth exactly the difference 2^{n}!)
+(For those of you a bit more into number theory, please note that the conversion into the Booth's representation, accords the MSB the regular treatment as if it were a position with positive $2^{(n-1)}$, whereas it should have been accorded the negative weight of $-2^{(n-1)}$, the difference of $2^n$ being exactly what would have been forthcoming, should we have completed the squaring of the books by having an extra 1 at the left end of the word, worth exactly the difference $2^{n}$!)
 
 Because we are always examining two bits at a time, we need a value for $M_{-1}$ to help us complete the inspection of the least significant bit, $M_0$.
 Therefore, in Booth's algorithm we add an extra '0' to the right of our multiplier input to help get the first step of our multiplication algorithm going.
