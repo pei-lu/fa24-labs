@@ -1,7 +1,7 @@
 ---
-title: Step 2
+title: Add Unit Optimization
 grand_parent: Lab 2
-parent: Part 1
+parent: Part 2
 layout: default
 nav_order: 3
 ---

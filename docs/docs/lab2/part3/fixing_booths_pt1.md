@@ -1,12 +1,12 @@
 ---
-title: Step 3
+title: Fixing Booth's Multiplier Pt. I
 grand_parent: Lab 2
-parent: Part 1
+parent: Part 3
 layout: katex
 nav_order: 3
 ---
 
-# Booth's Multiplier: Step 3
+# Booth's Multiplier: Part 3
 {: .no_toc}
 
 ## Contents
@@ -24,13 +24,13 @@ You decide that you need to deal with this pesky limitation of NumeriCorp's pecu
 which forced all the salesmen of your company to quickly run for the exits when a competitor started saying something about large negative numbers.
 Namely, it is time to make NumeriCorp a full-service company capable of representing and manipulating all (non-zero) two's complement numbers, including $-2^{(n-1)}$.
 
-While this lean and mean multiplier you constructed in [Step 2](https://cse140l.github.io/fa24-labs/docs/lab2/part1/step2) seems in general to be correctly functioning, you quickly realize that it runs into trouble with the largest representable negative numbers.
+While this lean and mean multiplier you constructed in [Part 2](https://cse140l.github.io/fa24-labs/docs/lab2/part2) seems in general to be correctly functioning, you quickly realize that it runs into trouble with the largest representable negative numbers.
 A quick glance at multiplying the largest representable negative number in the multiplicand by the simple value of 1 in the multiplier shows the extent of your troubles.
 But as you have clearly identified the causes of the problem, you persevere in your quest to fix things up.
 With two's complement multiplication, you soon realize those overflowing partial sums can be restored to health if you have extra headroom to accommodate the result (and, of course, assuming you can figure out what the correct sign bit should be).
 You soon realize that the extra headroom to accommodate the restoration of the result will magically appear as a result of the right shift.
 With this sliver of hope, you decide to examine more carefully what the sign bit should be when you right shift and to determine a logic implementation to feed your sign bit.
-You quickly realize that your straightforward techniques of [Step 2](https://cse140l.github.io/fa24-labs/docs/lab2/part1/step2) will fall short of the mark.
+You quickly realize that your straightforward techniques of [Part 2](https://cse140l.github.io/fa24-labs/docs/lab2/part2) will fall short of the mark.
 
 After a brief moment of consideration, you remember that you either add or subtract the multiplicand at each step, and the sign of the new partial sum value after each step merely depends on the sign bit of the multiplicand and the performed operation at the current step.
 For instance, the accumulator value takes the opposite sign of the multiplicand after the first subtraction operation, and its sign becomes identical to the multiplicand upon the next addition operation.

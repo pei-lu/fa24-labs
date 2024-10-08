@@ -1,8 +1,8 @@
 ---
-title: Part 1
+title: Part 4
 parent: Lab 2
 layout: default
-nav_order: 3
+nav_order: 6
 ---
 
 # Booth's Multiplier
@@ -18,15 +18,15 @@ nav_order: 3
 
 ## Goals
 
-1. Create a Booth's multiplier
+1. Create a fully functional Booth's Multiplier
 
 ## Circuit Structure
 
 {: .warning}
 Failure to follow this structure can result in grading of the lab to be delayed or incorrect.
 
-Your main *Digital* circuit should be named as `BoothsMultiplierPart1`.
-The following ports should be opened for the `BoothsMultiplierPart1`:
+Your main *Digital* circuit should be named as `BoothsMultiplierPart4`.
+The following ports should be opened for the `BoothsMultiplierPart4`:
 
 | Port Direction | Port Name       | Active | Port Width (bits) | Description                                                             |
 |:--------------:|-----------------|:------:|------------------:|-------------------------------------------------------------------------|

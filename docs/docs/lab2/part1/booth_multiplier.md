@@ -1,5 +1,5 @@
 ---
-title: Step 1
+title: Booth's Multiplier
 grand_parent: Lab 2
 parent: Part 1
 layout: default

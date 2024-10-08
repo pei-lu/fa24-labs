@@ -46,13 +46,13 @@ This is a fundamental concept of digital logic.
 Additionally, we hope to introduce a simple and trivial part of boolean optimization.
 The lab will be divided into 2 parts:
 
-1. **Booths Multiplier**
+1. **Booth's Multiplier**
 2. **Boolean Optimization**
 
 ## Lab Report
 
 Please write a lab report that contains the following information:
-- Your name and PID
+- Your name(s) and PID(s)
 - Pictures of your final circuits for each part (including embedded circuits)
 - Answers to lab questions posed throughout the lab.
 
@@ -65,13 +65,19 @@ Please write a lab report that contains the following information:
 
 Please submit the following files to Gradescope **individually**:
 
-- `BoothsMultiplier.v`
+- `BoothsMultiplierPart1.v`
+- `BoothsMultiplierPart2.v`
+- `BoothsMultiplierPart3.v`
+- `BoothsMultiplierPart4.v`
 - `BooleanOptimizations.v`
-- All `.dig` files you have used 
+- All `.dig` files you have created 
 - PDF of your [lab report](#lab-report)
 
 ## Grading
 
-* [Part 1](https://cse140l.github.io/fa24-labs/docs/lab1/part1): 60%
-* [Part 2](https://cse140l.github.io/fa24-labs/docs/lab1/part2): 30%
+* [Part 1](https://cse140l.github.io/fa24-labs/docs/lab2/part1): 18%
+* [Part 2](https://cse140l.github.io/fa24-labs/docs/lab2/part1): 18%
+* [Part 3](https://cse140l.github.io/fa24-labs/docs/lab2/part1): 18%
+* [Part 4](https://cse140l.github.io/fa24-labs/docs/lab2/part1): 18%
+* [Part 5](https://cse140l.github.io/fa24-labs/docs/lab2/part2): 18%
 * [Lab Report](#lab-report): 10%
