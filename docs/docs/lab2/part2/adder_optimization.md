@@ -39,3 +39,13 @@ Consider the order of additions and subtractions in Booth's algorithm.
 Is there a pattern in the sequence of additions/subtractions that Booth's algorithm performs that can lead to any guarantees regarding overflow occurrence?
 
 </details>
+
+{: .highlight-title}
+> Lab Report
+>
+> Outline the optimizations you were able to make.
+> Why were these optimizations possible?
+> It is obvious that introducing the largest negative number means that your Part 2 circuit will no longer produce the correct output for all inputs.
+> However, this does not mean that all input combinations which use the largest negative number will be incorrect.
+> Can you distinguish between input combinations making use of the largest negative number that will produce the correct answer from those which will produce an incorrect answer?
+> Please explain.

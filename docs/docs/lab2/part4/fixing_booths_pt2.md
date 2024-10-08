@@ -33,3 +33,14 @@ You realize that the proposed solution requires you to remember whether you have
 Armed with the result of your analysis, you should modify your circuit from [Part 3](https://cse140l.github.io/fa24-labs/docs/lab2/part3) to include the logic implementation satisfying the requirements identified in the last paragraph for determining the correct Accumulator MSB at all stages of Booth's multiplication.
 Your overall logic to determine the correct shift-in value into the accumulator should comfortably fit within the constraints of 4 gates and a flip-flop.
 Try your solution on numerous input conditions, including of course even multipliers, and various combinations of the largest representable positive and negative two's complement numbers.
+
+{: .highlight-title}
+> Lab Report
+>
+> Please explain what should be the shift-in value into the Accumulator before any actual addition/subtraction operation.
+> How did you keep track of the first addition/subtraction occurrence in your design?
+>
+> At the beginning of the report, we explained that NumeriCorp handles the input "0" differently than other numbers.
+> Which of the four circuits above can correctly handle an input of 0?
+> Does it matter whether 0 is the multiplier or the multiplicand?
+> Why does each circuit behave this way?

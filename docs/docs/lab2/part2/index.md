@@ -37,7 +37,3 @@ The following ports should be opened for the `BoothsMultiplierPart2`:
 |     OUTPUT     | `RESULT`        |    -   |                26 | 26-bit signed decimal output as a result from your multiplication       |
 |     OUTPUT     | `OP_DONE`       |    -   |                 2 | The operation you have performed (addition, subtraction, or no-op)      |
 |     OUTPUT     | `DONE`          |  High  |                 1 | Set high when you have finished the multiplication                      |
-
-## Deliverables
-- `BoothsMultiplier.dig`
-- `BoothsMultiplier.v`

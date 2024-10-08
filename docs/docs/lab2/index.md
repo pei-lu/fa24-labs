@@ -47,7 +47,7 @@ Additionally, we hope to introduce a simple and trivial part of boolean optimiza
 The lab will be divided into 2 parts:
 
 1. **Booth's Multiplier**
-2. **Boolean Optimization**
+2. **Logical Equvialence Checking**
 
 ## Lab Report
 
@@ -69,15 +69,15 @@ Please submit the following files to Gradescope **individually**:
 - `BoothsMultiplierPart2.v`
 - `BoothsMultiplierPart3.v`
 - `BoothsMultiplierPart4.v`
-- `BooleanOptimizations.v`
+- `LogicalEquivalenceChecking.v`
 - All `.dig` files you have created 
 - PDF of your [lab report](#lab-report)
 
 ## Grading
 
 * [Part 1](https://cse140l.github.io/fa24-labs/docs/lab2/part1): 18%
-* [Part 2](https://cse140l.github.io/fa24-labs/docs/lab2/part1): 18%
-* [Part 3](https://cse140l.github.io/fa24-labs/docs/lab2/part1): 18%
-* [Part 4](https://cse140l.github.io/fa24-labs/docs/lab2/part1): 18%
-* [Part 5](https://cse140l.github.io/fa24-labs/docs/lab2/part2): 18%
+* [Part 2](https://cse140l.github.io/fa24-labs/docs/lab2/part2): 18%
+* [Part 3](https://cse140l.github.io/fa24-labs/docs/lab2/part3): 18%
+* [Part 4](https://cse140l.github.io/fa24-labs/docs/lab2/part4): 18%
+* [Part 5](https://cse140l.github.io/fa24-labs/docs/lab2/part5): 18%
 * [Lab Report](#lab-report): 10%

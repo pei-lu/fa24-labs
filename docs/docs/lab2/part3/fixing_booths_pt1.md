@@ -38,3 +38,10 @@ Now the accumulator sign determination is under control; you can derive a simple
 Your implementation should not require more than a single 2-input logic gate.
 Similar to the previous parts, you should store the generated sign value in the flip-flop F2 whenever a result is stored in the accumulator and keep shifting the same sign value until the next real addition/subtraction step.
 Being rather fond of odd numbers, as your great interest in highschool in math and science seems to have singled you as the odd man out, you try your design with a whole bunch of odd multipliers to confirm its correctness.
+
+{: .highlight-title}
+> Lab Report
+>
+> Please explain the rules that govern the behavior of the sign bit of the partial product after each real addition/subtraction over the course of a Booth's multiplication.
+> How did you translate these rules into the corresponding logic in your circuit?
+> In addition, please explain why your circuit produced an incorrect result for the even multiplier values.

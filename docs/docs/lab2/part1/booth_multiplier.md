@@ -41,3 +41,14 @@ Specifically, you must implement glue logic determining the following:
 - What bit should be shifted into the Accumulator.
 You should additionally complete the interconnections among the components since, as you can see, a number of components are floating unconnected to the rest, and not all inputs/outputs are shown.
 We recommend that the Flip Flop F1 (as well as F2) be implemented using the *Digital* `D-Flip-Flop` component, as this component is sufficient for the various needed functionalities for this task without cluttering the design with unnecessary extra functionalities.
+
+{: .highlight-title}
+> Lab Report
+>
+> **Explain:**
+> - Your behavioral design for the multiplier
+> - Your reasoning about the glue logic
+> - How you came to develop the glue logic
+> - Your derivation of logic determining the Add/Subtract signal
+> - The `LOAD` input of the Accumulator
+> - THe `SHIFT_IN` input of the Accumulator
