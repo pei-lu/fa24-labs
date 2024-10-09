@@ -43,7 +43,7 @@ and
 $$
 \begin{align*}
 Z_0 &= \overline{B}\cdot (A+C)\cdot (\overline{A} + \overline{C}) \\\
-Z_1 &= A\overline{B}\overline{C}+\overline{A}\overline{B}C
+Z_1 &= A\cdot\overline{B}\cdot\overline{C}+\overline{A}\cdot\overline{B}\cdot C
 \end{align*}
 $$
 
