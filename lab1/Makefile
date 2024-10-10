@@ -14,9 +14,10 @@ pull:
 	podman pull $(CONTAINER)
 
 verilog:
-	mkdir -p verilog/
+	mkdir -p verilog/ schematics/lib
 	cp ../common/verilator_config.v verilog/
-	$(PODMAN_RUN) $(CONTAINER) make _verilog || rm -rf verilog
+	cp ../libdig/lab1/*.dig schematics/lib
+	$(PODMAN_RUN) $(CONTAINER) make _verilog
 
 build: verilog
 	$(PODMAN_RUN) $(CONTAINER) make -C simulator wasm
@@ -26,7 +27,7 @@ simulate:
 
 _verilog:
 	for top in $$(cat $(TOPLEVEL_LIST)) ; do \
-        digital verilog -dig schematics/$$top.dig -verilog verilog/$$top.v; \
+		digital verilog -dig schematics/$$top.dig -verilog verilog/$$top.v; \
 	done
 
 clean:
