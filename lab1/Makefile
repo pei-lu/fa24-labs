@@ -3,7 +3,13 @@
 PART ?= 1
 PODMAN_RUN = podman run -it --rm -v ./:/src -e PART=$(PART)
 
-CONTAINER ?= docker.io/anishg24/cse140l:latest
+ARCH=$(shell uname -m)
+ifeq ($(ARCH), x86_64)
+	CONTAINER ?= docker.io/anishg24/cse140l:latest
+else ifeq ($(ARCH), arm64)
+	CONTAINER ?= docker.io/anishg24/cse140l:latest-arm64
+endif
+
 PORT      ?= 8000
 
 TOPLEVEL_LIST ?= top_level.txt
