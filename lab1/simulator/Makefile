@@ -20,7 +20,7 @@ wasm: $(OUTPUT_DIR)/$(TOPLEVEL).js
 
 $(TOPLEVEL)_dir: ../verilog/
 	$(VERILATOR_EXE) --Mdir $(TOPLEVEL)_dir --cc --public ../verilog/$(TOPLEVEL).v $(VERILATOR_CONFIG)
-	$(EMMAKE) make -C obj_dir -f V$(TOPLEVEL).mk
+	$(EMMAKE) make -C $(TOPLEVEL)_dir -f V$(TOPLEVEL).mk
 
 $(OUTPUT_DIR)/$(TOPLEVEL).js: $(TOPLEVEL)_dir wasm.cpp
 	mkdir -p $(OUTPUT_DIR)
