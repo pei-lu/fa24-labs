@@ -121,4 +121,4 @@ The ports of the module are provided below with a description:
 | Port Direction | Port Name       | Active | Port Width (bits) | Description                                                             |
 |:--------------:|-----------------|:------:|------------------:|-------------------------------------------------------------------------|
 |      INPUT     | `DATA_IN`       |   -    |                 7 | 7-bit unsigned integer number to get decoded into 2 digits              |
-|     OUTPUT     | `DATA_OUT`      |   -    |                14 | Signals 0-7 are for the first display, and 8-14 are for the second      |
+|     OUTPUT     | `DATA_OUT`      |   -    |                14 | Output of the decoder (do not include actual displays in your circuit)  |
