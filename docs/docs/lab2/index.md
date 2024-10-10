@@ -23,10 +23,6 @@ October 21st, 2024
 
 ---
 
-{: .warning}
-This is an unfinished lab.
-Anything here is subject to change without notice.
-
 ## Lore
 
 Over the summer, you find yourself interning at NumeriCorp, a hardware company which specializes in devising hardware implementations of common arithmetic and numerical algorithms.
