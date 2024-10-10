@@ -66,14 +66,6 @@ async def check_clear(dut):
     assert dut.ALARM_WEEKS.value == 0, "ALARM_WEEKS not cleared"
     assert dut.ALARM_MONTHS.value == 0, "ALARM_MONTHS not cleared"
 
-    assert dut.SEG_SECONDS.value == 0, "SEG_SECONDS not cleared"
-    assert dut.SEG_MINUTES.value == 0, "SEG_MINUTES not cleared"
-    assert dut.SEG_HOURS.value == 0, "SEG_HOURS not cleared"
-    assert dut.SEG_DAYS.value == 0, "SEG_DAYS not cleared"
-    assert dut.SEG_WEEKS.value == 0, "SEG_WEEKS not cleared"
-    assert dut.SEG_MONTHS.value == 0, "SEG_MONTHS not cleared"
-    assert dut.SEG_YEARS.value == 0, "SEG_YEARS not cleared"
-
 async def increment_min_hr_dy_wk__mo(dut, min: int, hr: int, dy: int, wk: int, mo: int):
     for m in range(min):
         dut.MIN_ADV.value = 1

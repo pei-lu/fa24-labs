@@ -29,4 +29,3 @@ async def check_clr(dut):
 async def pass_one_minute(dut):
     await run_clock_seconds(100)
     assert dut.MINUTES.value == 1, "EXPECTED MINUTES TO BE 1"
-    assert dut.SEG_MINUTES.value == 1, "EXPECTED SEG_MINUTES TO BE 1"

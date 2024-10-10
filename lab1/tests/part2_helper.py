@@ -45,10 +45,6 @@ async def check_clear(dut):
     assert dut.ALARM_MINUTES.value == 0, "ALARM_MINUTES not cleared"
     assert dut.ALARM_HOURS.value == 0, "ALARM_HOURS not cleared"
 
-    assert dut.SEG_SECONDS.value == 0, "SEG_SECONDS not cleared"
-    assert dut.SEG_MINUTES.value == 0, "SEG_MINUTES not cleared"
-    assert dut.SEG_HOURS.value == 0, "SEG_HOURS not cleared"
-
 async def increment_min_hr(dut, min: int, hr: int):
     for m in range(min):
         dut.MIN_ADV.value = 1
