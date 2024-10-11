@@ -27,5 +27,5 @@ async def check_clr(dut):
 
 @cocotb.test() #wait on minute
 async def pass_one_minute(dut):
-    await run_clock_seconds(100)
+    await run_clock_seconds(dut, 100)
     assert dut.MINUTES.value == 1, "EXPECTED MINUTES TO BE 1"
