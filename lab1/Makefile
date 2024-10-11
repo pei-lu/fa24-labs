@@ -14,7 +14,7 @@ PORT ?= 8000
 
 TOPLEVEL_LIST ?= top_level.txt
 
-all: build
+all: build_all
 
 pull:
 	podman pull $(CONTAINER)
@@ -23,15 +23,18 @@ schematics/lib:
 	mkdir -p schematics/lib
 	cp ../libdig/lab1/*.dig schematics/lib
 
-verilog: schematics/lib
+verilog/: schematics/lib
 	mkdir -p verilog/
 	cp ../common/verilator_config.v verilog/
 	$(PODMAN_RUN) $(CONTAINER) make _verilog
 
 build: verilog
+	$(PODMAN_RUN) $(CONTAINER) make -C simulator build_$(PART)
+
+build_all: verilog
 	$(PODMAN_RUN) $(CONTAINER) make -C simulator wasm
 
-simulate:
+simulate: build_all
 	$(PODMAN_RUN) -p $(PORT):$(PORT) $(CONTAINER) make -C simulator simulate PORT=$(PORT)
 
 test: verilog
@@ -46,4 +49,4 @@ _verilog:
 	done
 
 clean:
-	$(RM) -rf verilog/ simulator/scripts/wasm schematics/lib
+	$(RM) -rf simulator/scripts/wasm schematics/lib simulator/*_dir
