@@ -34,7 +34,7 @@ build: verilog
 build_all: verilog
 	$(PODMAN_RUN) $(CONTAINER) make -C simulator wasm
 
-simulate: build_all
+simulate:
 	$(PODMAN_RUN) -p $(PORT):$(PORT) $(CONTAINER) make -C simulator simulate PORT=$(PORT)
 
 test: verilog
