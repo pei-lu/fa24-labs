@@ -1,6 +1,5 @@
 .PHONY: clean build simulate all test test_all _verilog
 
-PART ?= 1
 PODMAN_RUN = podman run -it --rm -v ./:/src -e PART=$(PART)
 
 ARCH=$(shell uname -m)
@@ -23,10 +22,11 @@ schematics/lib:
 	mkdir -p schematics/lib
 	cp ../libdig/lab1/*.dig schematics/lib
 
-verilog: schematics/lib
+verilog: schematics/lib schematics/*.dig
 	mkdir -p verilog/
 	cp ../common/verilator_config.v verilog/
 	$(PODMAN_RUN) $(CONTAINER) make _verilog
+	rm -rf schematics/lib
 
 build: verilog
 	$(PODMAN_RUN) $(CONTAINER) make -C simulator build_$(PART)
